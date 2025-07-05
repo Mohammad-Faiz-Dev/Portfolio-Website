@@ -2,11 +2,6 @@
 
 Welcome to my personal portfolio website! This is a minimalistic trial site built to showcase my skills in front-end development. It includes a clean layout, responsive design, multi-page navigation, side buttons, and a downloadable resume.
 
-## 🌐 Live Demo
-
-👉 visit directly: 'https://mohammad-faiz-dev.github.io/Portfolio-Website/'  
-
----
 
 ## 🔧 Built With
 

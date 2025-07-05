@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This is a minimalistic trial site buil
 
 ## 🌐 Live Demo
 
-👉 visit directly: 'https://mohammad-faiz-dev.github.io/My-Website/'  
+👉 visit directly: 'https://mohammad-faiz-dev.github.io/Portfolio-Website/'  
 
 ---
 

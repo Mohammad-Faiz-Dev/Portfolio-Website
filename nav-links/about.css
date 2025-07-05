@@ -1,0 +1,120 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav h1 {
+  margin-right: auto;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: rgb(40, 174, 174);
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* About Panels */
+.about-panel {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fefefe;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-panel:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-panel h3 {
+  color: rgb(40, 174, 174);
+  margin-bottom: 0.5rem;
+}
+
+.about-panel p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  nav h1 {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+nav {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  margin-right: auto;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+}
+.intro {
+  text-align: left;
+}
+
+.intro h2 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.intro p {
+    color: black;
+}
+footer {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .side-buttons {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 24rem 0 1rem 0;
+  }
+
+  .side-buttons a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.side-buttons {
+  position: fixed;
+  top: 25%;
+  right: 10%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.side-buttons a {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgb(40, 174, 174);
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.side-buttons button a:hover {
+  background-color: rgb(32, 150, 150);
+}

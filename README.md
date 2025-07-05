@@ -68,18 +68,6 @@ Edit
 
 ---
 
-## 📄 Resume
-
-📥 [Download Resume](./buttons/Resume.pdf)
-
----
-
-## 🙋‍♂️ About Me
-
-Motivated and adaptable web developer with a strong base in HTML, CSS, JavaScript, and Python, with growing command of SQL and creative front-end interactions. Focused on writing clean, modular code and building user-focused, accessible web experiences.
-
----
-
 ## 📬 Contact
 
 📧 Reach me via the [Contact Page](./nav-links/contact.html)  

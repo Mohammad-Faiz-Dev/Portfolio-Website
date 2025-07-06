@@ -1,0 +1,281 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Header / Navbar */
+nav {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  margin-right: auto;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section */
+main {
+  padding: 2rem 5vw;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: rgb(40, 174, 174);
+  margin-bottom: 0.5rem;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  position: relative;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fefefe;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+  color: rgb(40, 174, 174);
+}
+
+.project p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+
+/* Technology Logos */
+.project img {
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  opacity: 0.6;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  perspective: 1000px;
+}
+
+/* Position logos side by side */
+.project .html-logo {
+  right: 2.7rem; /* Position HTML logo with slight gap */
+}
+
+.project .css-logo {
+  right: 1rem; /* Position CSS logo on the right */
+}
+
+/* Keep Python logo in original position for single-logo projects */
+.project .python-logo {
+  right: 1rem;
+}
+
+.project.python:hover .python-logo,
+.project.html:hover .html-logo,
+.project.css:hover .css-logo {
+  animation: spinY 6s linear infinite;
+}
+
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  .project img {
+    width: 2rem;
+    top: 0.5rem;
+  }
+  
+  /* Adjust positioning for mobile */
+  .project .html-logo {
+    right: 2.2rem;
+  }
+  
+  .project .css-logo {
+    right: 0.5rem;
+  }
+  
+  .project .python-logo {
+    right: 0.5rem;
+  }
+}
+
+/* Replace your existing dark mode CSS section with this: */
+
+/* === Dark Mode - Fixed === */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html.dark-mode {
+  background-color: #000 !important;
+}
+
+html.dark-mode body {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Navigation in dark mode */
+html.dark-mode nav {
+  background-color: #222 !important;
+  color: #fff !important;
+}
+
+html.dark-mode nav a {
+  color: #fff !important;
+}
+
+/* Main content in dark mode */
+html.dark-mode main {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+html.dark-mode .intro h2 {
+  color: white !important;
+}
+
+html.dark-mode .intro p {
+  color: #ddd !important;
+}
+
+/* Projects in dark mode */
+html.dark-mode .project {
+  background-color: #222 !important;
+  border-color: #444 !important;
+  color: #fff !important;
+}
+
+html.dark-mode .project h3 {
+  color: white !important;
+}
+
+html.dark-mode .project p {
+  color: #ddd !important;
+}
+
+html.dark-mode .project:hover {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Footer in dark mode */
+html.dark-mode footer {
+  background-color: #222 !important;
+  color: #fff !important;
+}

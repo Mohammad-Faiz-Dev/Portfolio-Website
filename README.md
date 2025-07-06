@@ -3,8 +3,6 @@
 A fully responsive, dark-mode-enabled portfolio website built using **HTML**, **CSS**, and **JavaScript**.  
 It features multiple pages — Home, Projects, Resume, Skills, About, and Contact — all styled with consistent layouts and smart logic.
 
-> 🔧 Live Demo Coming Soon
-
 ---
 
 ## 🌙 Dark Mode

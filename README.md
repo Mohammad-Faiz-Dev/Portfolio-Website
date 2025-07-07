@@ -16,6 +16,7 @@ Dark Mode is now implemented site-wide and persists across pages using `localSto
 - Modular CSS files for different pages (e.g., `projects.css`, `about.css`)
 - Clean transitions and hover effects
 - Centralized, safe JavaScript logic
+- Fixed site's navbar responsive issues and adjusted on all pages
 - Fixed minor bugs: improper theme application, layout shifts, flickers
 - Improved spacing and alignment across all screen sizes
 - Resolved responsiveness issues for mobile and tablets

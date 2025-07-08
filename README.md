@@ -75,4 +75,4 @@ Big thanks to:
 
 ---
 
-📁 _This project is still actively evolving — stay tuned for v2.4 with animated highlights and lazy-loaded assets._
+📁 _This project is still actively evolving — stay tuned for v2.4 with more and please note i've implemented a minimilistic design to the site so expect no flashy animations.

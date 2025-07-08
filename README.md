@@ -14,8 +14,8 @@ Dark Mode is now implemented site-wide and **persists across pages** using `loca
 
 ## New Features in v2.3
 
--** Highlights section** added on homepage (grid layout)
--** Dark Mode** support added for highlights & side buttons
+-**Highlights section** added on homepage (grid layout)
+-**Dark Mode** support added for highlights & side buttons
 - Side buttons repositioned for **mobile screens (375×667)** — now fixed just above the footer with spacing
 - Enhanced CSS modularity and **consistent rem/em/% usage** for full responsiveness
 - New interactive **"Read More" toggle** in Skills page (modular and reusable)

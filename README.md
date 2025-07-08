@@ -1,4 +1,4 @@
-# 💼 My Portfolio Website (V-2.3)
+# My Portfolio Website (V-2.3)
 
 A fully responsive, minimalistic, dark-mode-enabled portfolio website built using **HTML**, **CSS**, and **JavaScript**.
 
@@ -6,25 +6,25 @@ It features multiple pages — **Home, Projects, Resume, Skills, About, and Cont
 
 ---
 
-## 🌙 Dark Mode
+## Dark Mode
 
 Dark Mode is now implemented site-wide and **persists across pages** using `localStorage`. The toggle is available in the footer, and settings carry over regardless of the page you're on.
 
 ---
 
-## ✨ New Features in v2.3
+## New Features in v2.3
 
-- 🟩 **Highlights section** added on homepage (grid layout)
-- 🎯 **Dark Mode** support added for highlights & side buttons
-- 📱 Side buttons repositioned for **mobile screens (375×667)** — now fixed just above the footer with spacing
-- 🛠 Enhanced CSS modularity and **consistent rem/em/% usage** for full responsiveness
-- 🧩 New interactive **"Read More" toggle** in Skills page (modular and reusable)
-- 🌓 Expanded dark mode styling for dynamic components
-- 🧱 Improved layout stacking logic and text readability in small screens
+-** Highlights section** added on homepage (grid layout)
+-** Dark Mode** support added for highlights & side buttons
+- Side buttons repositioned for **mobile screens (375×667)** — now fixed just above the footer with spacing
+- Enhanced CSS modularity and **consistent rem/em/% usage** for full responsiveness
+- New interactive **"Read More" toggle** in Skills page (modular and reusable)
+- Expanded dark mode styling for dynamic components
+- Improved layout stacking logic and text readability in small screens
 
 ---
 
-## ✨ Existing Features
+##Existing Features
 
 - Minimalistic and clean UI/UX
 - Responsive layout using Flexbox and media queries
@@ -38,7 +38,7 @@ Dark Mode is now implemented site-wide and **persists across pages** using `loca
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - **HTML5**
 - **CSS3**
@@ -47,7 +47,7 @@ Dark Mode is now implemented site-wide and **persists across pages** using `loca
 
 ---
 
-## 📊 Version Comparison
+## Version Comparison
 
 | Feature / Behavior       | v1 (Initial)              | v2.3 (Current)                       |
 |--------------------------|---------------------------|--------------------------------------|
@@ -66,13 +66,13 @@ Dark Mode is now implemented site-wide and **persists across pages** using `loca
 
 ---
 
-## 🧠 Credits
+## Credits
 
 Big thanks to:
 
-- 🤖 **ChatGPT (OpenAI)** – for core logic, theme persistence, responsive design refactors, and architectural planning
-- 🤖 **Claude.ai (Anthropic)** – for resolving layout inconsistencies and refining dark mode support
+- **ChatGPT (OpenAI)** – for core logic, theme persistence, responsive design refactors, and architectural planning
+- **Claude.ai (Anthropic)** – for resolving layout inconsistencies and refining dark mode support
 
 ---
 
-📁 _This project is still actively evolving — stay tuned for v2.4 with more and please note i've implemented a minimilistic design to the site so expect no flashy animations.
+This project is still actively evolving — stay tuned for v2.4 with more and please note i've implemented a minimilistic design to the site so expect no flashy animations.

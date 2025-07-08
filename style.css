@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+nav {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  margin-right: auto;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 5%;
+  max-width: 50rem;
+  width: 100%;
+}
+.intro {
+  text-align: left;
+}
+
+.intro h2 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.intro p {
+    color: black;
+}
+footer {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+}
+
+/* Desktop side buttons - only for very large screens with sufficient height */
+@media (min-width: 1400px) and (min-height: 900px) {
+  .side-buttons {
+    position: fixed;
+    top: 25%;
+    right: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 1000;
+  }
+}
+
+/* Default side buttons positioning for most screens */
+.side-buttons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0 2rem 0;
+  padding: 0 5%;
+  width: 100%;
+}
+
+.side-buttons a {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: rgb(40, 174, 174);
+  color: white;
+  font-weight: 500;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.side-buttons a:hover {
+  background-color: rgb(32, 150, 150);
+}
+
+/* Large desktop responsive styles */
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .side-buttons {
+    margin: 4rem 0 2rem 0;
+    gap: 1.5rem;
+  }
+  
+  .side-buttons a {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet responsive styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .side-buttons {
+    margin: 4rem 0 2rem 0;
+    gap: 1.5rem;
+  }
+  
+  .side-buttons a {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  /* Mobile side buttons */
+  .side-buttons {
+    margin: 2rem 0 1rem 0;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .side-buttons a {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Toggle Button Style */
+#darkModeToggle {
+  background-color: #fff;
+  color: #222;
+  border: 0.125rem solid #222;      /* 2px = 0.125rem */
+  border-radius: 0.375rem;          /* 6px = 0.375rem */
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  margin-left: auto;
+  font-weight: 600;
+}
+
+/* Dark Mode Style for the Button */
+body.dark-mode #darkModeToggle {
+  background-color: #222;
+  color: #fff;
+  border: 0.125rem solid #fff;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #222; /* dark grey */
+}
+
+body.dark-mode main {
+  background-color: #000;
+}
+
+body.dark-mode a {
+  color: rgb(253, 253, 253); /* optional: make links stand out */
+}
+/* Dark Mode Active */
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Force text color for all children */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a {
+  color: #fff !important;
+}
+
+/* Header and Footer go dark grey */
+body.dark-mode header nav,
+body.dark-mode footer {
+  background-color: #222 !important;
+}
+
+/* Main content area black background */
+body.dark-mode main {
+  background-color: #000 !important;
+}
+
+/* === Highlights Section (Light Mode already defined) === */
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /* 10rem = 160px-ish */
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.highlight-box {
+  background: rgb(40, 174, 174);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.05); /* 2px 5px-ish */
+  border-radius: 0.8rem;
+}
+
+/* === Dark Mode === */
+body.dark-mode .highlight-box {
+  background-color: #111;
+  color: #f0f0f0;
+  border: 0.0625rem solid #444; /* 1px */
+  box-shadow: 0 0.125rem 0.3125rem rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .highlights {
+  background: transparent;
+}
+/* === Side Buttons - Dark Mode === */
+body.dark-mode .side-buttons {
+  background-color: transparent; /* or set a subtle dark bg */
+}
+
+body.dark-mode .side-buttons a {
+  background-color: #111;
+  color: #f0f0f0;
+  border: 0.0625rem solid #444; /* 1px */
+  box-shadow: 0 0.125rem 0.3125rem rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .side-buttons a:hover {
+  background-color: #1f1f1f;
+  color: #fff;
+}

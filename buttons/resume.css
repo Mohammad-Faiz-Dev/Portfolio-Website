@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+nav {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  min-height: auto;
+}
+
+nav h1 {
+  margin-right: auto;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-left: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .active {
+  text-decoration: underline;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+  word-wrap: break-word;
+}
+
+.intro h3 {
+  margin-top: 2rem;
+  color: rgb(40, 174, 174);
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
+
+.resume-section {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.intro ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.intro li {
+  margin-bottom: 0.4rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.download-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.download-btn {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.download-btn:hover {
+  background-color: rgb(32, 150, 150);
+}
+
+footer {
+  background-color: rgb(40, 174, 174);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+    }
+  
+  nav h1 {
+    margin-bottom: 0;
+    margin-right: 0;
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    margin-left: 0;
+  }
+
+  nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  main {
+    padding: 1rem;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+  
+  .intro h3 {
+    font-size: 1.1rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    gap: 0.5rem;
+  }
+  
+  nav h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+
+  nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  main {
+    padding: 0.8rem;
+  }
+
+  .intro h2 {
+    font-size: 1.3rem;
+  }
+  
+  .intro h3 {
+    font-size: 1rem;
+  }
+
+  .intro ul {
+    margin-left: 1rem;
+  }
+
+  .download-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+/* === Dark Mode Styles === */
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode nav a {
+  color: #fff;
+}
+
+body.dark-mode main {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode .intro h2,
+body.dark-mode .intro h3 {
+  color: #fff;
+}
+
+body.dark-mode .intro li {
+  color: #ddd;
+}
+
+body.dark-mode .download-btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+body.dark-mode .download-btn:hover {
+  background-color: #555;
+}
